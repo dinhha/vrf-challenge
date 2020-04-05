@@ -1,0 +1,23 @@
+{
+  "name": "vrf-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js",
+    "build": "rsync -avzP --exclude node_modules . root@iceteastudio.click:/home/VRF/",
+    "fetch": "rsync -avzP root@iceteastudio.click:/home/VRF/*.json ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "google-spreadsheet": "^3.0.8",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
